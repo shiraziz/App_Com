@@ -5,10 +5,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: ['lucide-react'], // Exclure lucide-react des dépendances optimisées
   },
   server: {
     open: true, // Ouvre automatiquement le navigateur
   },
-  base: './', 
+ 
+  base: './', // Chemin de base pour les ressources
 });

@@ -1,22 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "target": "ES2022", // Cible la version ES2022
+    "lib": ["ES2022"], // Utilisation de la bibliothèque ES2022
+    "module": "ESNext", // Module ESNext
+    "skipLibCheck": true, // Ignore le contrôle des types des fichiers de déclaration
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
+    "moduleResolution": "node", // Résolution des modules en mode node
+    // "allowImportingTsExtensions": true, // Option inconnue, à supprimer ou corriger
+    "isolatedModules": true, // Permet la compilation de chaque fichier séparément
+    "noEmit": true, // Ne pas émettre de fichiers de sortie
 
     /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "strict": true, // Active le mode strict
+    "noUnusedLocals": true, // Avertit sur les variables locales inutilisées
+    "noUnusedParameters": true, // Avertit sur les paramètres inutilisés
+    "noFallthroughCasesInSwitch": true // Avertit sur les cas de switch sans break
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "src/**/*"] // Inclus tous les fichiers dans src
 }
