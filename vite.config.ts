@@ -12,6 +12,6 @@ export default defineConfig({
     open: true, // Ouvre automatiquement le navigateur
   },
  
-  base: '/App_Com/', // Ajoutez cette ligne
+  base: '/', // Ajoutez cette ligne
 
 });
