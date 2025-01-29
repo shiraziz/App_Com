@@ -11,5 +11,5 @@ export default defineConfig({
     open: true, // Ouvre automatiquement le navigateur
   },
  
-  base: './', // Chemin de base pour les ressources
+  base: '/', // Chemin de base pour les ressources
 });
